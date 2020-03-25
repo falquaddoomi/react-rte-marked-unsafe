@@ -1,8 +1,18 @@
 # React Rich Text Editor
 
-![Build Status](https://travis-ci.org/sstur/react-rte.svg?branch=master)
+![Build Status](https://travis-ci.org/falquaddoomi/react-rte-marked-unsafe.svg?branch=master)
 
 This is a UI component built completely in React that is meant to be a full-featured textarea replacement similar to [CKEditor][ckeditor], [TinyMCE][tinymce] and other [rich text "WYSIWYG" editors][rte]. It's based on the excellent, open source [Draft.js][draft-js] from Facebook which is performant and production-tested.
+
+
+### Differences from react-rte
+This fork, courtesy of https://github.com/peterzernia/react-rte, differs from
+the original [react-rte](https://github.com/sstur/react-rte) library in that it
+marks `componentWillMount` as "UNSAFE_". This removes deprecation warnings in
+React 16.x, and ensures that the library will continue to function in React 17.x.
+
+(Ideally someone would replace those usages with something that's more
+correct...maybe I'll do it if I feel sufficiently motivated to try...)
 
 ## Demo
 
@@ -13,7 +23,7 @@ Try the editor here: [react-rte.org/demo][react-rte-demo]
 
 ## Getting Started
 
-    $ npm install --save react-rte
+    $ npm install --save react-rte-marked-unsafe
 
 `RichTextEditor` is the main editor component. It is comprised of the Draft.js `<Editor>`, some UI components (e.g. toolbar) and some helpful abstractions around getting and setting content with HTML/Markdown.
 

@@ -1,6 +1,6 @@
 {
-  "name": "react-rte",
-  "version": "0.16.1",
+  "name": "react-rte-marked-unsafe",
+  "version": "0.16.2",
   "description": "React Rich Text Editor",
   "main": "dist/react-rte.js",
   "files": [
@@ -64,7 +64,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sstur/react-rte.git"
+    "url": "git+https://github.com/falquaddoomi/react-rte-marked-unsafe"
   },
   "keywords": [
     "reactjs",
@@ -135,6 +135,10 @@
     {
       "name": "Hyunyoung Cho",
       "url": "https://github.com/ZeroCho"
+    },
+    {
+      "name": "Peter Zernia",
+      "url": "https://github.com/peterzernia"
     }
   ],
   "license": "ISC",
